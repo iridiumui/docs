@@ -1,0 +1,14 @@
+{
+    "scripts": {
+        "style": "./node_modules/.bin/eslint .eslintrc --ext .js,.vue src tests",
+        "style:fix": "./node_modules/.bin/eslint .eslintrc --ext .js,.vue src tests --fix",
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs"
+    },
+    "private": true,
+    "devDependencies": {
+        "eslint": "^5.8.0",
+        "eslint-plugin-vue": "^4.7.1",
+        "vuepress": "^0.14.4"
+    }
+}
