@@ -1,7 +1,7 @@
 <template>
     <fixed-top>
         <header class="bg-grey-lightest flex items-center w-full px-3 h-16 relative z-50 md:px-4 lg:px-0 xl:justify-between">
-            <div class="lg:w-64 lg:pl-10 xl:w-80">
+            <div class="lg:w-64 lg:pl-12 xl:w-80">
                 <router-link to="/">
                     <screen-sm direction="down">
                         <svg class="h-8" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">

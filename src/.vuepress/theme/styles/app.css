@@ -70,9 +70,22 @@ body {
     height: calc(100vh - 4rem);
 }
 
+
 @screen md {
     .slide-out-sidebar {
         @apply w-2/5;
+    }
+}
+
+.sidebar {
+    @apply w-64;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+}
+
+@screen xl {
+    .sidebar {
+        @apply w-80;
     }
 }
 
