@@ -1,9 +1,9 @@
 {
     "scripts": {
-        "style": "./node_modules/.bin/eslint .eslintrc --ext .js,.vue src tests",
-        "style:fix": "./node_modules/.bin/eslint .eslintrc --ext .js,.vue src tests --fix",
-        "docs:dev": "vuepress dev docs",
-        "docs:build": "vuepress build docs"
+        "style": "./node_modules/.bin/eslint .eslintrc --ext .js,.vue src",
+        "style:fix": "./node_modules/.bin/eslint .eslintrc --ext .js,.vue src --fix",
+        "docs:dev": "vuepress dev src",
+        "docs:build": "vuepress build src"
     },
     "private": true,
     "devDependencies": {
