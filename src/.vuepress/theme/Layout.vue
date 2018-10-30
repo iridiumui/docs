@@ -1,5 +1,5 @@
 <template>
-    <div class="font-sans min-h-screen overflow-hidden">
+    <div class="font-sans min-h-screen overflow-hidden bg-white">
         <site-header></site-header>
     </div>
 </template>

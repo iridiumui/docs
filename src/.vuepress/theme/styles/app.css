@@ -60,3 +60,7 @@
 .transition-350 {
     transition-duration: 350ms;
 }
+
+body {
+    background-color: config('colors.pink');
+}
