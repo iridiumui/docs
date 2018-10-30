@@ -16,8 +16,8 @@
         </div>
         <form class="flex-1 mx-4">
             <div class="relative">
-                <svg class="text-grey-light w-4 h-4 absolute" style="left: 0.5rem; top: 50%; transform: translateY(-50%);" fill="currentColor" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><path d="M16.769 14.698l-3.31-3.31a.796.796 0 0 0-.565-.233h-.542a6.871 6.871 0 0 0 1.462-4.25A6.905 6.905 0 0 0 6.907 0a6.905 6.905 0 1 0 0 13.811 6.874 6.874 0 0 0 4.25-1.46v.54c0 .213.083.416.233.565l3.31 3.31a.794.794 0 0 0 1.126 0l.94-.94a.8.8 0 0 0 .003-1.128zm-9.862-3.543a4.248 4.248 0 0 1-4.25-4.25c0-2.347 1.899-4.249 4.25-4.249a4.248 4.248 0 0 1 4.25 4.25c0 2.347-1.9 4.25-4.25 4.25z"/></svg>
-                <input class="bg-grey-lighter outline-none w-full pl-8 pr-4 py-3" type="search" placeholder="Search">
+                <svg class="text-grey-light w-4 h-4 absolute vertical-center" style="left: 0.5rem;" fill="currentColor" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg"><path d="M16.769 14.698l-3.31-3.31a.796.796 0 0 0-.565-.233h-.542a6.871 6.871 0 0 0 1.462-4.25A6.905 6.905 0 0 0 6.907 0a6.905 6.905 0 1 0 0 13.811 6.874 6.874 0 0 0 4.25-1.46v.54c0 .213.083.416.233.565l3.31 3.31a.794.794 0 0 0 1.126 0l.94-.94a.8.8 0 0 0 .003-1.128zm-9.862-3.543a4.248 4.248 0 0 1-4.25-4.25c0-2.347 1.899-4.249 4.25-4.249a4.248 4.248 0 0 1 4.25 4.25c0 2.347-1.9 4.25-4.25 4.25z"/></svg>
+                <input class="bg-grey-lighter outline-none w-full pl-8 pr-4 py-3 focus:bg-white transition transition-150" type="search" placeholder="Search">
             </div>
         </form>
         <screen-md direction="down">
