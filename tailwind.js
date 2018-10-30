@@ -35,6 +35,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Proxima Nova',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
