@@ -42,16 +42,17 @@
                                         Router Link
                                     </router-link>
                                 </div>
-                                <div class="p-8 border-t border-grey-lighter">
-                                    <a
-                                        v-for="item in globalNavItems"
-                                        :href="item.url"
-                                        target="_blank"
-                                        class="block font-semibold no-underline text-grey-dark mb-4"
-                                    >
-                                        {{ item.name }}
-                                    </a>
-                                </div>
+                                <ul class="list-reset p-8 border-t border-grey-lighter">
+                                    <li v-for="item in globalNavItems">
+                                        <a
+                                            :href="item.url"
+                                            target="_blank"
+                                            class="block font-semibold no-underline text-grey-dark mb-4"
+                                        >
+                                            {{ item.name }}
+                                        </a>
+                                    </li>
+                                </ul>
                             </nav>
                         </transition>
                     </div>
@@ -60,14 +61,17 @@
 
             <screen-xl>
                 <nav class="xl:w-80 xl:pr-10">
-                    <a
-                        v-for="item in globalNavItems"
-                        :href="item.url"
-                        target="_blank"
-                        class="font-semibold no-underline text-grey-dark mr-4"
-                    >
-                        {{ item.name }}
-                    </a>
+                    <ul>
+                        <li v-for="item in globalNavItems">
+                            <a
+                                :href="item.url"
+                                target="_blank"
+                                class="font-semibold no-underline text-grey-dark mr-4"
+                            >
+                                {{ item.name }}
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
             </screen-xl>
         </header>
