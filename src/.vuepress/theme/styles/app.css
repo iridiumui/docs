@@ -80,3 +80,7 @@ body {
 .sidebar-link {
     @apply block text-grey-dark font-semibold no-underline leading-none mb-3;
 }
+
+.sidebar-sublink {
+    @apply block text-grey-dark no-underline leading-none mb-3;
+}

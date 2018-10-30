@@ -10,7 +10,7 @@
                                 {{ link.name }}
                             </router-link>
                             <div v-if="link.sublinks" class="mb-6">
-                                <router-link v-for="sublink in link.sublinks" :to="`/${group.slug}/${link.slug}/${sublink.slug}`" class="sidebar-link pl-3">
+                                <router-link v-for="sublink in link.sublinks" :to="`/${group.slug}/${link.slug}/${sublink.slug}`" class="sidebar-sublink pl-3 font-normal">
                                     {{ sublink.name }}
                                 </router-link>
                             </div>
