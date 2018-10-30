@@ -46,11 +46,11 @@ module.exports = {
                             { name: 'Fixed Left', slug: 'fixed-left' },
                         ]},
                         { name: 'Breakpoint', slug: 'breakpoint', 'sublinks': [
-                            { name: 'Breakpoint XS', slug: 'breakpoint-xs' },
-                            { name: 'Breakpoint SM', slug: 'breakpoint-sm' },
-                            { name: 'Breakpoint MD', slug: 'breakpoint-md' },
-                            { name: 'Breakpoint LG', slug: 'breakpoint-lg' },
-                            { name: 'Breakpoint XL', slug: 'breakpoint-xl' },
+                            { name: 'Screen XS', slug: 'screen-xs' },
+                            { name: 'Screen SM', slug: 'screen-sm' },
+                            { name: 'Screen MD', slug: 'screen-md' },
+                            { name: 'Screen LG', slug: 'screen-lg' },
+                            { name: 'Screen XL', slug: 'screen-xl' },
                         ]},
                     ]
                 },
