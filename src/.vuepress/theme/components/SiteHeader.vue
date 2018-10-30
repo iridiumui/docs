@@ -1,6 +1,6 @@
 <template>
     <fixed-top>
-        <header class="bg-grey-lightest flex items-center w-full p-3 relative z-50 md:p-4 lg:px-0 xl:justify-between">
+        <header class="bg-grey-lightest flex items-center w-full px-3 h-16 relative z-50 md:px-4 lg:px-0 xl:justify-between">
             <div class="lg:w-64 lg:pl-10 xl:w-80">
                 <router-link to="/">
                     <screen-sm direction="down">
@@ -36,23 +36,35 @@
                             <svg class="text-grey-darker" fill="currentColor" viewBox="0 0 29 22" width="29" height="22" xmlns="http://www.w3.org/2000/svg"><g><rect width="29" height="4" rx="2"/><rect y="9" width="29" height="4" rx="2"/><rect y="18" width="29" height="4" rx="2"/></g></svg>
                         </button>
                         <transition name="slide-left">
-                            <nav v-show="open" class="absolute pin-r push-t border-t border-grey-lighter bg-grey-lightest w-3/4 md:w-2/5">
-                                <div class="p-8">
-                                    <router-link to="#">
-                                        Router Link
-                                    </router-link>
+                            <nav v-show="open" class="slide-out-sidebar">
+                                <div class="overflow-y-auto h-full pt-8 md:pt-12">
+                                    <div v-for="group in sidebarNavGroups" class="px-8 pb-8 md:px-12 md:pb-8">
+                                        <h3 class="text-xs font-bold text-grey uppercase tracking-wide leading-none mb-3">{{ group.name }}</h3>
+                                        <ul class="list-reset">
+                                            <li v-for="link in group.links">
+                                                <router-link :to="`/${group.slug}/${link.slug}`" class="sidebar-link">
+                                                    {{ link.name }}
+                                                </router-link>
+                                                <div v-if="link.sublinks" class="mb-6">
+                                                    <router-link v-for="sublink in link.sublinks" :to="`/${group.slug}/${link.slug}/${sublink.slug}`" class="sidebar-link pl-3">
+                                                        {{ sublink.name }}
+                                                    </router-link>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="list-reset p-8 border-t border-grey-lighter">
+                                        <li v-for="item in globalNavItems">
+                                            <a
+                                                :href="item.url"
+                                                target="_blank"
+                                                class="sidebar-link"
+                                            >
+                                                {{ item.name }}
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <ul class="list-reset p-8 border-t border-grey-lighter">
-                                    <li v-for="item in globalNavItems">
-                                        <a
-                                            :href="item.url"
-                                            target="_blank"
-                                            class="block font-semibold no-underline text-grey-dark mb-4"
-                                        >
-                                            {{ item.name }}
-                                        </a>
-                                    </li>
-                                </ul>
                             </nav>
                         </transition>
                     </div>
@@ -61,7 +73,7 @@
 
             <screen-xl>
                 <nav class="xl:w-80 xl:pr-10">
-                    <ul>
+                    <ul class="list-reset flex">
                         <li v-for="item in globalNavItems">
                             <a
                                 :href="item.url"
@@ -85,6 +97,10 @@
         computed: {
             globalNavItems() {
                 return this.$site.themeConfig.navigation.global
+            },
+
+            sidebarNavGroups() {
+                return this.$site.themeConfig.navigation.sidebar
             }
         },
 
