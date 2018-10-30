@@ -42,3 +42,21 @@
     transition: all;
 }
 
+.transition-100 {
+    transition-duration: 100ms;
+}
+.transition-150 {
+    transition-duration: 150ms;
+}
+.transition-200 {
+    transition-duration: 200ms;
+}
+.transition-250 {
+    transition-duration: 250ms;
+}
+.transition-300 {
+    transition-duration: 300ms;
+}
+.transition-350 {
+    transition-duration: 350ms;
+}
