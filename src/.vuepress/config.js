@@ -7,5 +7,13 @@ module.exports = {
             require("autoprefixer")
         ]
     },
-    themeConfig: {}
+    themeConfig: {
+        navigation: {
+            global: [
+                { name: 'Videos', url: 'https://www.youtube.com/channel/UCrdw4aUCfIAnFNB9q_80dqQ' },
+                { name: 'Github', url: 'https://github.com/iridiumui/iridium' },
+                { name: 'Twitter', url: 'https://twitter.com/IridiumUI' },
+            ]
+        }
+    }
 }

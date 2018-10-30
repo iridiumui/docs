@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-grey-lightest flex items-center p-3">
+    <header class="bg-grey-lightest flex items-center p-3 relative z-50">
         <div>
             <router-link to="/">
                 <screen-md direction="down">
@@ -22,23 +22,55 @@
         </form>
         <screen-md direction="down">
             <hamburger-nav>
-                <button slot="toggle" slot-scope="{ toggle }" @click="toggle">
-                    <visually-hidden>
-                        <span>
-                            Open Menu
-                        </span>
-                    </visually-hidden>
-                    <svg viewBox="0 0 29 22" width="29" height="22" xmlns="http://www.w3.org/2000/svg"><g fill="#6F7178"><rect width="29" height="4" rx="2"/><rect y="9" width="29" height="4" rx="2"/><rect y="18" width="29" height="4" rx="2"/></g></svg>
-                </button>
-                <template slot="content" slot-scope="{ open, toggle }">
-                    <nav v-show="open">
-                        <a href="#">content</a>
-                    </nav>
-                </template>
+                <div slot-scope="{ toggle, open }">
+                    <button  @click="toggle">
+                        <visually-hidden>
+                            <span>
+                                Open Menu
+                            </span>
+                        </visually-hidden>
+                        <svg class="text-grey-darker" fill="currentColor" viewBox="0 0 29 22" width="29" height="22" xmlns="http://www.w3.org/2000/svg"><g><rect width="29" height="4" rx="2"/><rect y="9" width="29" height="4" rx="2"/><rect y="18" width="29" height="4" rx="2"/></g></svg>
+                    </button>
+                    <transition name="slide-left">
+                        <nav v-show="open" class="absolute pin-r push-t border-t border-grey-lighter bg-grey-lightest w-3/4">
+                            <div class="p-8">
+                                <router-link to="#">
+                                    Router Link
+                                </router-link>
+                            </div>
+                            <div class="p-8 border-t border-grey-lighter">
+                                <a
+                                    v-for="item in globalNavItems"
+                                    :href="item.url"
+                                    target="_blank"
+                                    class="block font-semibold no-underline text-grey-dark mb-4"
+                                >
+                                    {{ item.name }}
+                                </a>
+                            </div>
+                        </nav>
+                    </transition>
+                </div>
             </hamburger-nav>
         </screen-md>
     </header>
 </template>
+
 <script>
-    export default {}
+    export default {
+        computed: {
+            globalNavItems() {
+                return this.$site.themeConfig.navigation.global
+            }
+        }
+    }
 </script>
+
+<style>
+    .slide-left-enter-active, .slide-left-leave-active {
+        transition: transform 200ms;
+    }
+    .slide-left-enter, .slide-left-leave-to {
+        transform: translateX(100%);
+    }
+</style>
