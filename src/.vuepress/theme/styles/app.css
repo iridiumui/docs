@@ -77,18 +77,6 @@ body {
     }
 }
 
-.sidebar {
-    @apply w-64;
-    top: 4rem;
-    height: calc(100vh - 4rem);
-}
-
-@screen xl {
-    .sidebar {
-        @apply w-80;
-    }
-}
-
 .sidebar-link {
     @apply block text-grey-dark font-semibold no-underline leading-none mb-3;
 }
