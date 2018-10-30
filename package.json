@@ -7,8 +7,10 @@
     },
     "private": true,
     "devDependencies": {
+        "autoprefixer": "^9.3.1",
         "eslint": "^5.8.0",
         "eslint-plugin-vue": "^4.7.1",
+        "tailwindcss": "^0.6.6",
         "vuepress": "^0.14.4"
     }
 }
