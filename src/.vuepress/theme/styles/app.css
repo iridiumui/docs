@@ -84,3 +84,93 @@ body {
 .sidebar-sublink {
     @apply block text-grey-dark no-underline leading-none mb-3;
 }
+
+.content {
+    @apply relative mb-12;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    @apply font-bold text-black mb-4 mt-12;
+}
+
+.content h1 {
+    @apply text-4xl;
+}
+
+.content h2 {
+    @apply text-3xl;
+}
+
+.content h3 {
+    @apply text-2xl;
+}
+.content h4 {
+    @apply text-xl;
+}
+.content h5 {
+    @apply text-base;
+}
+
+.content .header-anchor {
+    @apply hidden;
+}
+
+.content .subheadline {
+    @apply text-xl text-grey-dark leading-normal mb-4;
+}
+
+.content p {
+    @apply text-base text-grey-dark leading-normal mb-4;
+}
+
+.content a {
+    @apply text-pink no-underline;
+}
+
+.content a:hover {
+    @apply text-pink-dark underline;
+}
+
+.content .icon.outbound {
+    @apply hidden;
+}
+
+.content ol, .content ul {
+    @apply pl-8 text-grey-dark text-base my-8;
+}
+
+.content li {
+    @apply mb-4;
+}
+
+.content code {
+    @apply bg-grey-lightest p-1 text-pink;
+}
+
+.content pre {
+    @apply bg-grey-lightest p-2 leading-normal my-8;
+}
+
+.content pre code {
+    @apply bg-transparent p-0 text-grey-darkest;
+}
+
+.content table {
+    @apply my-8 overflow-x-auto;
+}
+
+.content thead {
+    @apply bg-grey-lighter;
+}
+
+.content th {
+    @apply text-left;
+}
+
+.content th, .content td {
+    @apply p-1;
+}
+
+.content tbody tr:nth-child(2n) {
+    @apply bg-grey-lightest;
+}
