@@ -94,7 +94,6 @@ body {
     @apply text-grey;
 }
 
-
 .content {
     @apply relative mb-12;
 }
@@ -127,6 +126,11 @@ body {
     @apply text-base;
 }
 
+.content h2:before, .content h3:before {
+    content: "";
+    @apply block invisible -mt-24 h-24;
+}
+
 .content .header-anchor {
     @apply hidden;
 }
@@ -143,12 +147,15 @@ body {
     .content h3 {
         @apply text-3xl;
     }
+
     .content h4 {
         @apply text-2xl;
     }
+
     .content h5 {
         @apply text-xl;
     }
+
 }
 
 .content .subheadline {
