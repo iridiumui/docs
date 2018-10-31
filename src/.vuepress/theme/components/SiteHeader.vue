@@ -43,11 +43,11 @@
                                         <h3 class="text-xs font-bold text-grey uppercase tracking-wide leading-none mb-3">{{ group.name }}</h3>
                                         <ul class="list-reset">
                                             <li v-for="link in group.links">
-                                                <router-link :to="`/docs/${group.slug}/${link.slug}`" class="sidebar-link">
+                                                <router-link :to="`/docs/${group.slug}/${link.slug}/`" class="sidebar-link">
                                                     {{ link.name }}
                                                 </router-link>
                                                 <div v-if="link.sublinks" class="mb-6">
-                                                    <router-link v-for="sublink in link.sublinks" :to="`/docs/${group.slug}/${link.slug}/${sublink.slug}`" class="sidebar-link pl-3">
+                                                    <router-link v-for="sublink in link.sublinks" :to="`/docs/${group.slug}/${link.slug}/${sublink.slug}/`" class="sidebar-link pl-3">
                                                         {{ sublink.name }}
                                                     </router-link>
                                                 </div>
