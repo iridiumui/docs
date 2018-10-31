@@ -89,6 +89,12 @@ body {
     @apply relative mb-12;
 }
 
+@screen md {
+    .content {
+        @apply mb-24;
+    }
+}
+
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
     @apply font-bold text-black mb-4 mt-12;
 }
@@ -115,6 +121,26 @@ body {
     @apply hidden;
 }
 
+@screen md {
+    .content h1 {
+        @apply text-5xl;
+    }
+
+    .content h2 {
+        @apply text-4xl;
+    }
+
+    .content h3 {
+        @apply text-3xl;
+    }
+    .content h4 {
+        @apply text-2xl;
+    }
+    .content h5 {
+        @apply text-xl;
+    }
+}
+
 .content .subheadline {
     @apply text-xl text-grey-dark leading-normal mb-4;
 }
@@ -127,8 +153,18 @@ body {
     @apply text-pink no-underline;
 }
 
-.content a:hover {
-    @apply text-pink-dark underline;
+@screen md {
+    .content .subheadline {
+        @apply text-2xl;
+    }
+
+    .content p {
+        @apply text-xl;
+    }
+
+    .content a:hover {
+        @apply text-pink-dark underline;
+    }
 }
 
 .content .icon.outbound {
@@ -143,6 +179,12 @@ body {
     @apply mb-4;
 }
 
+@screen md {
+   .content ol, .content ul {
+        @apply text-xl;
+    }
+}
+
 .content code {
     @apply bg-grey-lightest p-1 text-pink;
 }
@@ -154,6 +196,8 @@ body {
 .content pre code {
     @apply bg-transparent p-0 text-grey-darkest;
 }
+
+
 
 .content table {
     @apply my-8 overflow-x-auto;
@@ -173,4 +217,14 @@ body {
 
 .content tbody tr:nth-child(2n) {
     @apply bg-grey-lightest;
+}
+
+@screen md {
+    .content table {
+        @apply w-full;
+    }
+
+    .content th, .content td {
+        @apply p-2;
+    }
 }
