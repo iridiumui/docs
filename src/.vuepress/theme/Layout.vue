@@ -3,7 +3,7 @@
         <site-header></site-header>
         <div class="flex xl:justify-between">
             <site-sidebar></site-sidebar>
-            <main class="px-3 pt-20 md:px-0 md:max-w-md md:mx-auto md:pt-24 lg:pt-32 xl:w-full xl:mx-16">
+            <main class="px-3 pt-20 md:px-0 md:max-w-md md:mx-auto md:pt-24 lg:pt-16 xl:w-full xl:mx-16">
                 <Content />
             </main>
             <screen-xl>
