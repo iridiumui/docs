@@ -1,6 +1,6 @@
 <template>
     <screen-lg>
-        <aside class="w-64 pt-16 h-screen xl:w-80">
+        <aside class="w-64 pt-16 h-screen xl:w-80 sticky pin-t">
             <nav class="bg-grey-lightest border-t border-grey-lighter overflow-y-auto h-full pt-8 md:pt-12">
                 <div v-for="group in sidebarNavGroups" class="px-12 pb-8">
                     <h3 class="text-xs font-bold text-grey uppercase tracking-wide leading-none mb-3">{{ group.name }}</h3>

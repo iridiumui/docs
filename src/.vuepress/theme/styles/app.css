@@ -186,7 +186,7 @@ body {
 }
 
 .content code {
-    @apply bg-grey-lightest p-1 text-pink;
+    @apply bg-grey-lightest p-1 text-pink text-base;
 }
 
 .content pre {
@@ -197,6 +197,11 @@ body {
     @apply bg-transparent p-0 text-grey-darkest;
 }
 
+@screen md {
+    .content code {
+        @apply px-2;
+    }
+}
 
 
 .content table {

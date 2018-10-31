@@ -1,5 +1,5 @@
 <template>
-    <div class="font-sans min-h-screen overflow-hidden bg-white">
+    <div class="font-sans min-h-screen overflow-hidden bg-white lg:overflow-visible">
         <site-header></site-header>
         <div class="flex xl:justify-between">
             <site-sidebar></site-sidebar>
