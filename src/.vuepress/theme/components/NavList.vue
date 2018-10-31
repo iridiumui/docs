@@ -4,11 +4,14 @@
             <h3 class="text-xs font-bold text-grey uppercase tracking-wide leading-none mb-3">{{ group.name }}</h3>
             <ul class="list-reset">
                 <li v-for="link in group.links">
-                    <router-link :to="`/docs/${group.slug}/${link.slug}/`" class="sidebar-link">
+                    <router-link
+                        :to="generateLink(group, link)"
+                        class="sidebar-link"
+                    >
                         {{ link.name }}
                     </router-link>
                     <div v-if="link.sublinks" class="mb-6">
-                        <router-link v-for="sublink in link.sublinks" :to="`/docs/${group.slug}/${link.slug}/${sublink.slug}/`" class="sidebar-sublink pl-3 font-normal">
+                        <router-link v-for="sublink in link.sublinks" :to="generateSublink(group, link, sublink)" class="sidebar-sublink pl-3 font-normal">
                             {{ sublink.name }}
                         </router-link>
                     </div>
@@ -30,6 +33,16 @@
 
             sidebarNavGroups() {
                 return this.$site.themeConfig.navigation.sidebar
+            }
+        },
+
+        methods: {
+            generateLink(group, link) {
+                return `/docs/${group.slug}/${link.slug}/`
+            },
+
+            generateSublink(group, link, sublink) {
+                return `/docs/${group.slug}/${link.slug}/${sublink.slug}/`
             }
         }
     }

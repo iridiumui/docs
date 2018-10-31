@@ -85,6 +85,10 @@ body {
     @apply block text-grey-dark no-underline leading-none mb-3;
 }
 
+.router-link-active {
+    @apply text-pink;
+}
+
 .local-sidebar ul {
     @apply list-reset;
 }
