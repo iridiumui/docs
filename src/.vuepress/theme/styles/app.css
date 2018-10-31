@@ -126,7 +126,7 @@ body {
     @apply text-base;
 }
 
-.content h2:before, .content h3:before {
+.content h1:before, .content h2:before, .content h3:before, .content h4:before, .content h5:before {
     content: "";
     @apply block invisible -mt-24 h-24;
 }
@@ -154,6 +154,46 @@ body {
 
     .content h5 {
         @apply text-xl;
+    }
+
+    .content .header-anchor {
+        @apply block absolute text-2xl push-r pr-4;
+    }
+
+    .content h1 .header-anchor {
+        transform: translateY(0.75rem);
+    }
+
+    .content h2 .header-anchor {
+        transform: translateY(0.4rem);
+    }
+
+    .content h3 .header-anchor {
+        transform: translateY(0.20rem);
+    }
+
+    .content h4 .header-anchor {
+        transform: translateY(-0.1rem);
+    }
+
+    .content h5 .header-anchor {
+        transform: translateY(-0.25rem);
+    }
+
+}
+
+@screen lg {
+
+    .content .header-anchor {
+        @apply hidden;
+    }
+
+    .content .header-anchor:hover {
+        @apply no-underline;
+    }
+
+    .content h1:hover .header-anchor, .content h2:hover .header-anchor, .content h3:hover .header-anchor, .content h4:hover .header-anchor, .content h5:hover .header-anchor {
+        @apply block;
     }
 
 }
