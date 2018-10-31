@@ -1,3 +1,4 @@
+import PortalVue from 'portal-vue'
 import Iridium from 'iridium-vue'
 
 export default ({
@@ -9,4 +10,6 @@ export default ({
     Vue.use(Iridium, {
         'prefix': ''
     })
+
+    Vue.use(PortalVue)
 }

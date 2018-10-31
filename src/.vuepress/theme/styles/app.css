@@ -85,6 +85,16 @@ body {
     @apply block text-grey-dark no-underline leading-none mb-3;
 }
 
+.local-sidebar ul {
+    @apply list-reset;
+}
+
+.local-sidebar a {
+    @apply sidebar-link;
+    @apply text-grey;
+}
+
+
 .content {
     @apply relative mb-12;
 }
