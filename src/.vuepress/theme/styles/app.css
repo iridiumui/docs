@@ -157,7 +157,7 @@ body {
     }
 
     .content .header-anchor {
-        @apply block absolute text-2xl push-r pr-4;
+        @apply block absolute text-2xl push-r pl-2 pr-4;
     }
 
     .content h1 .header-anchor {
