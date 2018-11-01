@@ -8,22 +8,13 @@
     export default {
         data() {
             return {
-                show: false
+                show: false,
+                observer: null
             }
         },
 
         mounted() {
-            const heading = document.querySelector('h1')
-
-            if (heading) {
-                const observer = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        this.show = !entry.intersectionRatio
-                    })
-                })
-
-                observer.observe(heading)
-            }
+            this.setupObserver()
         },
 
         methods: {
@@ -32,6 +23,39 @@
                     top: 0,
                     behavior: 'smooth'
                 })
+            },
+
+            setupObserver() {
+                this.destroyObserver()
+
+                const heading = document.querySelector('h1')
+
+                if (heading) {
+                    this.observer = new IntersectionObserver((entries, observer) => {
+                        entries.forEach(entry => {
+                            this.show = !entry.intersectionRatio
+                        })
+                    })
+
+                    this.observer.observe(heading)
+                }
+            },
+
+            destroyObserver() {
+                if (this.observer) {
+                    this.observer.disconnect()
+                    this.observer = null
+                }
+            }
+        },
+
+        destroyed() {
+            this.destroyObserver()
+        },
+
+        watch: {
+            $route(to, from) {
+                this.setupObserver()
             }
         }
     }
