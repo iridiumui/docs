@@ -23,6 +23,7 @@ module.exports = {
                         { name: 'Installation', slug: 'installation' },
                         { name: 'Renderless Components', slug: 'renderless-components' },
                         { name: 'Accessibility', slug: 'accessibility' },
+                        { name: 'Browser Support', slug: 'browser-support' },
                         { name: 'Components', slug: 'components' },
                         { name: 'Helpers', slug: 'helpers' },
                         { name: 'Transitions', slug: 'transitions' },
