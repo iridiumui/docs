@@ -1,9 +1,9 @@
 <template>
-    <screen-lg>
+    <ir-screen-lg>
         <aside class="w-64 pt-16 h-screen xl:w-80 sticky pin-t">
             <nav class="bg-grey-lightest border-t border-grey-lighter overflow-y-auto h-full pt-8 md:pt-12">
                 <nav-list>
-                    <screen-lg slot="footer" slot-scope="{ globalNavItems }" direction="down">
+                    <ir-screen-lg slot="footer" slot-scope="{ globalNavItems }" direction="down">
                         <ul class="list-reset px-12 py-8 border-t border-grey-lighter">
                             <li v-for="item in globalNavItems">
                                 <a
@@ -15,11 +15,11 @@
                                 </a>
                             </li>
                         </ul>
-                    </screen-lg>
+                    </ir-screen-lg>
                 </nav-list>
             </nav>
         </aside>
-    </screen-lg>
+    </ir-screen-lg>
 </template>
 
 <script>

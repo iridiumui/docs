@@ -8,7 +8,7 @@ export default ({
     siteData // site metadata
 }) => {
     Vue.use(Iridium, {
-        'prefix': ''
+        'prefix': 'ir-'
     })
 
     Vue.use(PortalVue)
