@@ -13,9 +13,7 @@
         "iridium-vue": "^0.2.0",
         "mousetrap": "^1.6.2",
         "tailwindcss": "^0.6.6",
-        "vuepress": "^0.14.4"
+        "vuepress": "^1.0.0-alpha.18"
     },
-    "dependencies": {
-        "portal-vue": "^1.4.0"
-    }
+    "dependencies": {}
 }
