@@ -7,7 +7,7 @@
                 <Content />
             </main>
             <ir-screen-xl>
-                <portal-target name="local-sidebar"></portal-target>
+                <LocalSidebar></LocalSidebar>
             </ir-screen-xl>
         </div>
 
