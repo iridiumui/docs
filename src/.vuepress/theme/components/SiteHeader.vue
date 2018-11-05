@@ -36,7 +36,7 @@
                             </ir-visually-hidden>
                             <svg class="text-grey-darker" fill="currentColor" viewBox="0 0 29 22" width="29" height="22" xmlns="http://www.w3.org/2000/svg"><g><rect width="29" height="4" rx="2"/><rect y="9" width="29" height="4" rx="2"/><rect y="18" width="29" height="4" rx="2"/></g></svg>
                         </button>
-                        <transition name="slide-left">
+                        <ir-transition-slide-left>
                             <nav v-show="open" class="slide-out-sidebar">
                                 <div class="overflow-y-auto h-full pt-8 md:pt-12">
                                     <nav-list>
@@ -54,7 +54,7 @@
                                     </nav-list>
                                 </div>
                             </nav>
-                        </transition>
+                        </ir-transition-slide-left>
                     </div>
                 </ir-hamburger-nav>
             </ir-screen-md>
