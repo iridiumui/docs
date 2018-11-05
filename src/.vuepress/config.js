@@ -1,11 +1,44 @@
+const path = require('path')
+const glob = require("glob-all");
+const PurgecssPlugin = require("purgecss-webpack-plugin");
+
+class TailwindExtractor {
+    static extract(content) {
+        return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
+    }
+}
+
 module.exports = {
     title: 'Iridium',
     description: 'A UI framework with no UI',
     ga: 'UA-128629156-1',
+    plugins: [
+        '@vuepress/google-analytics'
+    ],
     postcss: {
         plugins: [
             require("tailwindcss")("./tailwind.js"),
             require("autoprefixer")
+        ]
+    },
+    configureWebpack:  {
+        plugins: [
+            new PurgecssPlugin({
+                paths: glob.sync([
+                    path.join(__dirname, "./theme/styles/**/*.css"),
+                    path.join(__dirname, "./theme/components/**/*.vue"),
+                    path.join(__dirname, "./theme/global-components/**/*.vue"),
+                    path.join(__dirname, "./theme/layouts/**/*.vue"),
+                    path.join(__dirname, "../readme.md"),
+                    path.join(__dirname, "../docs/**/*.md"),
+                ]),
+                extractors: [
+                    {
+                        extractor: TailwindExtractor,
+                        extensions: ["html", "js", "vue", "md"]
+                    }
+                ]
+            })
         ]
     },
     head: [
