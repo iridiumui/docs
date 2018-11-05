@@ -1,5 +1,5 @@
 <template>
-    <ir-code-block class="relative">
+    <ir-code-block class="relative mb-4">
         <div slot="content">
             <slot></slot>
         </div>
