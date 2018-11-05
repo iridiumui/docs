@@ -6,12 +6,12 @@
                 <li v-for="link in group.links">
                     <router-link
                         :to="generateLink(group, link)"
-                        class="sidebar-link"
+                        class="sidebar-link text-grey-dark"
                     >
                         {{ link.name }}
                     </router-link>
                     <div v-if="link.sublinks" class="mb-6">
-                        <router-link v-for="sublink in link.sublinks" :to="generateSublink(group, link, sublink)" class="sidebar-sublink pl-3 font-normal">
+                        <router-link v-for="sublink in link.sublinks" :to="generateSublink(group, link, sublink)" class="sidebar-sublink text-grey-dark pl-3 font-normal">
                             {{ sublink.name }}
                         </router-link>
                     </div>

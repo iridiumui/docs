@@ -78,24 +78,15 @@ body {
 }
 
 .sidebar-link {
-    @apply block text-grey-dark font-semibold no-underline leading-none mb-3;
+    @apply block font-semibold no-underline leading-none mb-3;
 }
 
 .sidebar-sublink {
-    @apply block text-grey-dark no-underline leading-none mb-3;
+    @apply block no-underline leading-none mb-3;
 }
 
 .router-link-active {
     @apply text-pink;
-}
-
-.local-sidebar ul {
-    @apply list-reset;
-}
-
-.local-sidebar a {
-    @apply sidebar-link;
-    @apply text-grey;
 }
 
 .content {

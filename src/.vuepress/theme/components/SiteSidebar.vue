@@ -9,7 +9,7 @@
                                 <a
                                     :href="item.url"
                                     target="_blank"
-                                    class="sidebar-link"
+                                    class="sidebar-link text-grey-dark"
                                 >
                                     {{ item.name }}
                                 </a>

@@ -4,6 +4,7 @@
             <a slot-scope="{ scroll }"
                :href="`#${section.slug}`"
                @click.prevent="scroll"
+               class="sidebar-link text-grey"
             >
                 {{ section.title }}
             </a>
