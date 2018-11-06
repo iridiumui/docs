@@ -13,7 +13,7 @@ module.exports = {
     description: 'A UI framework with no UI',
     ga: 'UA-128629156-1',
     plugins: [
-        '@vuepress/google-analytics'
+        // '@vuepress/google-analytics'
     ],
     postcss: {
         plugins: [
