@@ -1,4 +1,4 @@
-docs/.vuepress/dist
+src/.vuepress/dist
 node_modules/
 npm-debug.log
 yarn-error.log
