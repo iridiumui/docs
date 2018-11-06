@@ -224,7 +224,7 @@ aside .router-link-active {
 }
 
 .content ol, .content ul {
-    @apply pl-8 text-grey-dark text-base my-8;
+    @apply pl-4 text-grey-dark text-base my-8;
 }
 
 .content li {
