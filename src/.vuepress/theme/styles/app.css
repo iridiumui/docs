@@ -242,7 +242,7 @@ aside .router-link-active {
 }
 
 .content pre {
-    @apply bg-grey-lightest p-2 leading-normal my-8;
+    @apply bg-grey-lightest overflow-x-auto p-2 leading-normal my-8 ;
 }
 
 .content pre code {
