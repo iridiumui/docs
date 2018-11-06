@@ -36,7 +36,7 @@ Vue.use(Iridium)
 The second way to use Iridium is to import each component directly where you need them.
 
 <CodeBlock>
-```js
+```html
 <script>
     import HamburgerNav from 'iridium-vue'
 
