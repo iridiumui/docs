@@ -9,7 +9,7 @@ One of the common problems with classic UI frameworks is that you always have to
 
 
 ### Renderless components
-Most Iridium components are [renderless components]('/docs/getting-started/renderless-components/') meaning that they will render anything you pass in as a slot. Relevant data and methods are exposed through scoped slots. That means you can control where the data is used and what will trigger a method call.
+Most Iridium components are [renderless components](../renderless-components/) meaning that they will render anything you pass in as a slot. Relevant data and methods are exposed through scoped slots. That means you can control where the data is used and what will trigger a method call.
 
 ### Helper components
 The goal of Iridium is to make the day-to-day developer experience better. One of the things Iridium provides is a set of small utility components. An example of this is the [Breakpoint]('/docs/helpers/breakpoint/') component. 
