@@ -5,6 +5,13 @@
             <site-sidebar></site-sidebar>
             <main class="px-3 pt-20 max-w-full md:px-0 md:max-w-md md:mx-auto md:pt-24 lg:flex-1 lg:pt-16 xl:w-full xl:mx-16">
                 <Content />
+                <p class="text-grey my-4">
+                    Made by
+                    <a href="https://twitter.com/bjornlindholmdk"
+                        target="_blank"
+                        class="text-grey font-bold no-underline hover:underline"
+                    >Bjørn Lindholm</a>
+                </p>
             </main>
             <ir-screen-xl>
                 <LocalSidebar></LocalSidebar>
