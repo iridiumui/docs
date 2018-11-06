@@ -228,7 +228,7 @@ aside .router-link-active {
 }
 
 .content li {
-    @apply mb-4;
+    @apply mb-4 leading-normal;
 }
 
 @screen md {
