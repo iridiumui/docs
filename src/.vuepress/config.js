@@ -77,6 +77,7 @@ module.exports = {
                         { name: 'Renderless Components', slug: 'renderless-components' },
                         { name: 'Accessibility', slug: 'accessibility' },
                         { name: 'Browser Support', slug: 'browser-support' },
+                        { name: 'SSR', slug: 'server-side-rendering' },
                     ]
                 },
                 {
@@ -87,15 +88,16 @@ module.exports = {
                     ]
                 },
                 {
+                    name: 'Extra',
+                    slug: 'extra',
+                    links: [
+                        { name: 'Code Block', slug: 'code-block' },
+                    ]
+                },
+                {
                     name: 'Helpers',
                     slug: 'helpers',
                     links: [
-                        { name: 'Fixed', slug: 'fixed', 'sublinks': [
-                            { name: 'Fixed Top', slug: 'fixed-top' },
-                            { name: 'Fixed Right', slug: 'fixed-right' },
-                            { name: 'Fixed Bottom', slug: 'fixed-bottom' },
-                            { name: 'Fixed Left', slug: 'fixed-left' },
-                        ]},
                         { name: 'Breakpoint', slug: 'breakpoint', 'sublinks': [
                             { name: 'Screen XS', slug: 'screen-xs' },
                             { name: 'Screen SM', slug: 'screen-sm' },
@@ -103,6 +105,15 @@ module.exports = {
                             { name: 'Screen LG', slug: 'screen-lg' },
                             { name: 'Screen XL', slug: 'screen-xl' },
                         ]},
+                        { name: 'Click Outside', slug: 'click-outside' },
+                        { name: 'Fixed', slug: 'fixed', 'sublinks': [
+                            { name: 'Fixed Top', slug: 'fixed-top' },
+                            { name: 'Fixed Right', slug: 'fixed-right' },
+                            { name: 'Fixed Bottom', slug: 'fixed-bottom' },
+                            { name: 'Fixed Left', slug: 'fixed-left' },
+                        ]},
+                        { name: 'In View', slug: 'in-view' },
+                        { name: 'Scroll To', slug: 'scroll-to' },
                     ]
                 },
                 {
@@ -110,6 +121,12 @@ module.exports = {
                     slug: 'accessibility',
                     links: [
                         { name: 'Visually Hidden', slug: 'visually-hidden' },
+                    ]
+                },
+                {
+                    name: 'Transitions',
+                    slug: 'transition',
+                    links: [
                     ]
                 }
             ]
