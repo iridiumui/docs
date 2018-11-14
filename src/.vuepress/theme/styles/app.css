@@ -1,7 +1,10 @@
+/* purgecss start ignore */
 @tailwind preflight;
+/* purgecss end ignore */
 @tailwind components;
 @tailwind utilities;
 
+/* purgecss start ignore */
 @font-face {
     font-family: 'Proxima Nova';
     font-weight: 400;
@@ -368,3 +371,5 @@ code.language-diff, pre.language-diff {
 .token.entity {
     cursor: help;
 }
+
+/* purgecss end ignore */
