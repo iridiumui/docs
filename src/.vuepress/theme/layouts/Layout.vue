@@ -18,22 +18,24 @@
             </ir-screen-xl>
         </div>
 
-        <ir-in-view element="h1">
-            <ir-scroll-to :top="0" slot-scope="{ inView }">
-                <ir-transition-fade-slide-up slot-scope="{ scroll }">
-                    <button class="fixed pin-b pin-r mb-8 mr-8"
-                        type="button"
-                        @click="scroll"
-                        v-show="!inView"
-                    >
-                        <ir-visually-hidden>
-                            <span>Scroll to top</span>
-                        </ir-visually-hidden>
-                        <svg class="w-8 h-8 text-grey-light" fill="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path d="M14.837.54l11.609 11.314a1.81 1.81 0 0 1 0 2.606c-.738.72-1.936.72-2.674 0L13.5 4.45 3.228 14.46c-.739.72-1.936.72-2.674 0a1.81 1.81 0 0 1 0-2.606L12.164.539C12.532.18 13.015 0 13.5 0c.484 0 .968.18 1.337.54z"/></svg>
-                    </button>
-                </ir-transition-fade-slide-up>
-            </ir-scroll-to>
-        </ir-in-view>
+        <ClientOnly>
+            <InView element="h1">
+                <ir-scroll-to :top="0" slot-scope="{ inView }">
+                    <ir-transition-fade-slide-up slot-scope="{ scroll }">
+                        <button class="fixed pin-b pin-r mb-8 mr-8"
+                            type="button"
+                            @click="scroll"
+                            v-show="!inView"
+                        >
+                            <ir-visually-hidden>
+                                <span>Scroll to top</span>
+                            </ir-visually-hidden>
+                            <svg class="w-8 h-8 text-grey-light" fill="currentColor" viewBox="0 0 27 15" xmlns="http://www.w3.org/2000/svg"><path d="M14.837.54l11.609 11.314a1.81 1.81 0 0 1 0 2.606c-.738.72-1.936.72-2.674 0L13.5 4.45 3.228 14.46c-.739.72-1.936.72-2.674 0a1.81 1.81 0 0 1 0-2.606L12.164.539C12.532.18 13.015 0 13.5 0c.484 0 .968.18 1.337.54z"/></svg>
+                        </button>
+                    </ir-transition-fade-slide-up>
+                </ir-scroll-to>
+            </InView>
+        </ClientOnly>
     </div>
 </template>
 
