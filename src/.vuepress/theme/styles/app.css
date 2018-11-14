@@ -88,7 +88,7 @@ body {
     @apply block no-underline leading-none mb-3;
 }
 
-aside .router-link-active {
+aside .router-link-exact-active {
     @apply text-pink;
 }
 
