@@ -18,6 +18,7 @@
             </ir-screen-xl>
         </div>
 
+        <!--
         <ClientOnly>
             <InView element="h1">
                 <ir-scroll-to :top="0" slot-scope="{ inView }">
@@ -36,6 +37,7 @@
                 </ir-scroll-to>
             </InView>
         </ClientOnly>
+        -->
     </div>
 </template>
 
