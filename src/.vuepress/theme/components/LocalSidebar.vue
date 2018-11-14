@@ -4,7 +4,7 @@
             <a slot-scope="{ scroll }"
                :href="`#${section.slug}`"
                @click.prevent="scroll"
-               class="sidebar-link text-grey"
+               class="sidebar-link text-grey hover:text-grey-dark"
             >
                 {{ section.title }}
             </a>

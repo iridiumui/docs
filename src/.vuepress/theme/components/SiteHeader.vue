@@ -45,7 +45,7 @@
                                                 <a
                                                     :href="item.url"
                                                     target="_blank"
-                                                    class="sidebar-link text-grey-dark"
+                                                    class="sidebar-link text-grey-dark hover:text-grey-darker"
                                                 >
                                                     {{ item.name }}
                                                 </a>
