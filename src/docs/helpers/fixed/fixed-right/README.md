@@ -2,7 +2,7 @@
 
 The Fixed Right component is an abstraction of the [Fixed](../) component.
 
-It will pin the element you pass in to the right of the page.
+It will pin the element you pass in, to the right of the page.
 
 ## Examples
 <CodeBlock>

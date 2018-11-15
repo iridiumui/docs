@@ -2,7 +2,7 @@
 
 The Fixed Bottom component is an abstraction of the [Fixed](../) component.
 
-It will pin the element you pass in to the bottom of the page.
+It will pin the element you pass in, to the bottom of the page.
 
 ## Examples
 <CodeBlock>

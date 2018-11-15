@@ -1,6 +1,6 @@
 # Fixed
 
-The Fixed component can be used to easily pin an element to one side of the page. It does so by  adding CSS to the element.
+The Fixed component can be used to easily pin an element to one side of the page. It does so by adding CSS to the element.
 
 Some helper components have been made with the Fixed component.
 

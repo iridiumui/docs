@@ -1,6 +1,6 @@
 # Breakpoint
 
-The Breakpoint component can be used to conditionally render content based on screen sizes. Under the hood it uses the [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) method to evalute a CSS media query string.
+The Breakpoint component can be used to conditionally render content based on screen sizes. Under the hood, it uses the [matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) method to evaluate a CSS media query string.
 
 A set of helper components have been made with the Breakpoint component. The components have been made so they correspond with [Bootstrap's breakpoints](https://getbootstrap.com/docs/4.1/layout/overview/).
 
@@ -31,7 +31,7 @@ A set of helper components have been made with the Breakpoint component. The com
 #### Hamburger nav on mobile
 It's a common pattern to have a hamburger nav on mobile and a normal top navigation on larger screen sizes. Instead of hiding one nav with CSS, the Breakpoint component can be used to render the correct navigation.
 
-#### Only include element on large screen sizes
+#### Only include an element on large screen sizes
 You might have a component that is only relevant for desktop users. The Breakpoint component can be used to only include that component on large screen sizes.
 
 #### Show warning to mobile users

@@ -22,10 +22,10 @@ The Click Outside component registers a click event listener on the document. It
 
 ## Use cases
 #### Slide Out Navs
-Click Outside can be useful when a navigation slides out on top of the page content when it's opened. In this case it can be used to trigger a close action for the navigation. This can be useful both on desktop and mobile.
+Click Outside can be useful when a navigation slides out on top of the page content when it's opened. In this case, it can be used to trigger a close action for the navigation. This can be useful both on desktop and mobile.
 
 #### Modals
-Modals often have several triggers that can close it. One of them is to click outside the modal. Click Outside can be used to trigger a close action in that case.
+Modals often have several triggers that can close it. One of them is to click outside of the modal. Click Outside can be used to trigger a close action in that case.
 
 ## Examples
 

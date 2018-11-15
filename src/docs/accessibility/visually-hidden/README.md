@@ -14,7 +14,7 @@ The Visually Hidden component is an accessibility helper. It should be used when
 
 ## Use cases
 #### Use an icon in a button
-Sometimes it's necessary to create a button that doesn't contain any text. A common example is a hamburger nav toggle. An svg icon is not easy to parse for screen readers so a small text is better.
+Sometimes it's necessary to create a button that doesn't contain any text. A common example is a hamburger nav toggle. An SVG icon is not easy to parse for screen readers so a small text is better.
 The text will not be visible for regular users.
 
 ## Examples
