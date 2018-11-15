@@ -1,6 +1,6 @@
 # Screen XL
 
-The Screen XL component is an abstraction of the Breakpoint component. 
+The Screen XL component is an abstraction of the [Breakpoint](../) component. 
 
 It can be used to display content on any screen sizes larger than `1200px`.
 

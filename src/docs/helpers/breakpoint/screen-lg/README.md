@@ -1,6 +1,6 @@
 # Screen LG
 
-The Screen LG component is an abstraction of the Breakpoint component. 
+The Screen LG component is an abstraction of the [Breakpoint](../) component. 
 
 It can be used to display content on any screen sizes larger than `992px` or smaller than `1200px`.
 

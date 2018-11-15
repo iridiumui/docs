@@ -1,6 +1,6 @@
 # Screen XS
 
-The Screen XS component is an abstraction of the Breakpoint component. 
+The Screen XS component is an abstraction of the [Breakpoint](../) component. 
 
 It can be used to display content on any screen sizes smaller than `576px`.
 

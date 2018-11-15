@@ -1,6 +1,6 @@
 # Screen SM
 
-The Screen SM component is an abstraction of the Breakpoint component. 
+The Screen SM component is an abstraction of the [Breakpoint](../) component. 
 
 It can be used to display content on any screen sizes larger than `576px` or smaller than `768px`.
 
