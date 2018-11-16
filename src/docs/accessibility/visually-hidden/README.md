@@ -23,7 +23,7 @@ The text will not be visible for regular users.
 ```html
 <button @click="toggle">
     <visually-hidden>Open Navigation</visually-hidden>
-    <svg></svg>
+    <svg aria-hidden></svg>
 </button>
 ```
 </CodeBlock>
