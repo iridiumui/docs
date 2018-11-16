@@ -125,6 +125,7 @@ module.exports = {
                     slug: 'accessibility',
                     links: [
                         { name: 'Visually Hidden', slug: 'visually-hidden' },
+                        { name: 'Focus Trap', slug: 'focus-trap' },
                     ]
                 },
                 {
