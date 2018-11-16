@@ -8,12 +8,16 @@ Some helper components have been made with the Fixed component.
 - [Fixed Right](./fixed-right/)
 - [Fixed Bottom](./fixed-bottom/)
 - [Fixed Left](./fixed-left/)
+- [Fixed Top Right](./fixed-top-right/)
+- [Fixed Top Left](./fixed-top-left/)
+- [Fixed Bottom Right](./fixed-bottom-right/)
+- [Fixed Bottom Left](./fixed-bottom-left/)
 
 ## Props
 
-| Name | Description                      | Type   | Required | Default Value |
-|------|----------------------------------|--------|----------|---------------|
-| edge | Which side to pin the element to | String | No       | 'top'         |
+| Name  | Description                       | Type             | Required | Default Value   |
+|------ |---------------------------------- |------------------|----------|-----------------|
+| edges | Which sides to pin the element to | Array of strings | No       | ['top']         |
 
 ## Slots
 
@@ -35,13 +39,23 @@ Many websites implement a fixed header or navigation so that it's always at the 
 Some websites make their hamburger nav slide in from one side when it's opened. 
 
 #### Scroll To Top button
-If a page is very long it might be good to have a button to take the user back to the top. This button will usually be fixed on the bottom of the page.
+If a page is very long it might be good to have a button to take the user back to the top. This button will usually be fixed in the bottom right corner of the page.
 
 ## Examples
 <CodeBlock>
 ```html
-<fixed edge="top">
+<fixed :edges="['top']">
     <header></header>
+</fixed>
+```
+</CodeBlock>
+
+<CodeBlock>
+```html
+<fixed :edges="['bottom', 'right']">
+    <button>
+        Scroll to Top
+    </button>
 </fixed>
 ```
 </CodeBlock>
