@@ -1,4 +1,4 @@
-const path = require('path')
+ const path = require('path')
 const glob = require("glob-all");
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 
@@ -85,6 +85,7 @@ module.exports = {
                     slug: 'components',
                     links: [
                         { name: 'Hamburger Nav', slug: 'hamburger-nav' },
+                        { name: 'Modal', slug: 'modal' },
                     ]
                 },
                 {
