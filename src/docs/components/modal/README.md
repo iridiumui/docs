@@ -2,9 +2,9 @@
 
 The Modal component makes it possible to create modals, popups, dialogs or similar components.
 
-One of the things the Modal does is taking care of trapping focus inside the modal when it's active. It can also be combined with other components such as the [Click Outside](../../helpers/click-outside/) component to create a great user experience.
+One of the things the Modal does is taking care of trapping focus inside the modal when it's active. It can be combined with other components such as the [Click Outside](../../helpers/click-outside/) component to create a great user experience.
 
-The Modal component also handles keyboard events. This means that users can close a modal by clicking `Escape`.
+The Modal component handles keyboard events. This means that users can close a modal by clicking `Escape`.
 
 The modal component supports [Portal Vue](https://github.com/LinusBorg/portal-vue). If you want to use a portal you have to add a `portal-target` in the place you want the modal rendered. This is useful to render modals at the end of the page and improve the experience for screen reader users.
 
