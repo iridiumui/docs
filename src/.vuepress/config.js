@@ -93,6 +93,7 @@ module.exports = {
                     slug: 'extra',
                     links: [
                         { name: 'Code Block', slug: 'code-block' },
+                        { name: 'Cookie Banner', slug: 'cookie-banner' },
                     ]
                 },
                 {
