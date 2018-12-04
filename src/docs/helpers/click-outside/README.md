@@ -2,6 +2,12 @@
 
 The Click Outside component registers a click event listener on the document. It's a renderless component. It will check whether a click was performed inside or outside the element that's passed in as a slot. An event is emitted if the click was performed outside.
 
+## Props
+
+| Name   | Description                                              | Type    | Required | Default Value |
+|--------|----------------------------------------------------------|---------|----------|---------------|
+| active | A flag to control whether the component should be active | Boolean | No       | true          |
+
 ## Slots
 
 | Name    | Description                                                                       |
@@ -33,7 +39,7 @@ A common use case for Click Outside is to wrap it around a modal.
 
 <CodeBlock>
 ```html
-<iridium-click-outside @clickoutside="open = false">
+<iridium-click-outside @clickoutside="open = false" :active="open">
     <modal :open="open">
         <!-- Modal Content -->
     </modal>
