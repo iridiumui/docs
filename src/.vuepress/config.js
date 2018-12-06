@@ -10,7 +10,7 @@ class TailwindExtractor {
 
 module.exports = {
     title: 'Iridium',
-    description: 'A UI framework with no UI',
+    description: 'Iridium is a UI framework built on top of Vue. It contains primarily renderless components that make it easy to customise the style of all UI components.',
     ga: 'UA-128629156-1',
     plugins: [
         // '@vuepress/google-analytics'
@@ -59,6 +59,19 @@ module.exports = {
         ['meta', { name: 'msapplication-TileColor', content: '#ffffff' }],
         ['meta', { name: 'msapplication-TileImage', content: '/ms-icon-144x144.png' }],
         ['meta', { name: 'theme-color', content: '#ffffff' }],
+
+        ['meta', { property: 'og:type', content: 'website' }],
+        ['meta', { property: 'og:url', content: 'http://iridiumui.com' }],
+        ['meta', { property: 'og:title', content: 'Iridium | A UI framework with no UI' }],
+        ['meta', { property: 'og:description', content: 'Iridium is a UI framework built on top of Vue. It contains primarily renderless components that make it easy to customise the style of all UI components.' }],
+        ['meta', { property: 'og:image', content: 'http://iridiumui.com/share/png' }],
+
+        ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
+        ['meta', { property: 'twitter:url', content: 'http://iridiumui.com' }],
+        ['meta', { property: 'twitter:title', content: 'Iridium | A UI framework with no UI' }],
+        ['meta', { property: 'twitter:description', content: 'Iridium is a UI framework built on top of Vue. It contains primarily renderless components that make it easy to customise the style of all UI components.' }],
+        ['meta', { property: 'twitter:image:image', content: 'http://iridiumui.com/share/png' }],
+
     ],
     themeConfig: {
         navigation: {
