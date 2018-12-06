@@ -8,9 +8,9 @@ It can be used to display content on any screen sizes larger than `1200px`.
 <CodeBlock>
 ```html
 <template>
-    <screen-xs>
+    <screen-xl>
         <p>This text is only visible on extra large screens</p>
-    </screen-xs>
+    </screen-xl>
 </template>
 ```
 </CodeBlock>

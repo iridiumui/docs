@@ -16,9 +16,9 @@ It supports two modes, up and down. Both modes are including the small breakpoin
 <CodeBlock>
 ```html
 <template>
-    <screen-xs>
+    <screen-sm>
         <p>This text is only visible on screens larger than 576px.</p>
-    </screen-xs>
+    </screen-sm>
 </template>
 ```
 </CodeBlock>
@@ -26,9 +26,9 @@ It supports two modes, up and down. Both modes are including the small breakpoin
 <CodeBlock>
 ```html
 <template>
-    <screen-xs direction="down">
+    <screen-sm direction="down">
         <p>This text is only visible on screens smaller than 768px.</p>
-    </screen-xs>
+    </screen-sm>
 </template>
 ```
 </CodeBlock>
