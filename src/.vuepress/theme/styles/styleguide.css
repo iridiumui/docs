@@ -186,6 +186,10 @@
     @apply bg-grey-lightest;
 }
 
+.content tr {
+    @apply text-black leading-normal;
+}
+
 @screen md {
     .content table {
         @apply w-full;
