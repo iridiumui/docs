@@ -1,0 +1,79 @@
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    @apply .text-grey-dark;
+}
+
+.token.punctuation {
+    @apply text-grey;
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol {
+    /*color: red;*/
+    @apply .text-blue;
+}
+
+code.language-diff, pre.language-diff {
+    @apply .text-grey-darker;
+}
+
+.token.deleted {
+    @apply .text-grey;
+}
+
+.token.inserted {
+    @apply .text-blue-dark;
+}
+
+.token.string {
+    @apply text-pink;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #a67f59;
+    background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    @apply text-pink;
+}
+
+.token.function {
+    /*@apply text-pink;*/
+    color: #2980b9;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    @apply text-pink;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}

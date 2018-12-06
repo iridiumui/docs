@@ -1,0 +1,24 @@
+
+.slide-out-sidebar {
+    @apply absolute pin-r push-t border-t border-grey-lighter bg-grey-lightest w-3/4;
+    height: calc(100vh - 4rem);
+}
+
+
+@screen md {
+    .slide-out-sidebar {
+        @apply w-2/5;
+    }
+}
+
+.sidebar-link {
+    @apply block font-semibold no-underline leading-none mb-3;
+}
+
+.sidebar-sublink {
+    @apply block no-underline leading-none mb-3;
+}
+
+aside .router-link-exact-active {
+    @apply text-pink;
+}

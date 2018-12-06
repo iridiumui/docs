@@ -1,0 +1,201 @@
+
+.content {
+    @apply relative mb-12;
+}
+
+@screen md {
+    .content {
+        @apply mb-24;
+    }
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    @apply font-bold text-black mb-4 mt-12;
+}
+
+.content h1 {
+    @apply text-4xl;
+}
+
+.content h2 {
+    @apply text-3xl;
+}
+
+.content h3 {
+    @apply text-2xl;
+}
+.content h4 {
+    @apply text-xl;
+}
+.content h5 {
+    @apply text-base;
+}
+
+.content h1:before, .content h2:before, .content h3:before, .content h4:before, .content h5:before {
+    content: "";
+    @apply block invisible -mt-24 h-24;
+}
+
+.content .header-anchor {
+    @apply hidden;
+}
+
+@screen md {
+    .content h1 {
+        @apply text-5xl;
+    }
+
+    .content h2 {
+        @apply text-4xl;
+    }
+
+    .content h3 {
+        @apply text-3xl;
+    }
+
+    .content h4 {
+        @apply text-2xl;
+    }
+
+    .content h5 {
+        @apply text-xl;
+    }
+
+    .content .header-anchor {
+        @apply block absolute text-2xl push-r pl-2 pr-4;
+    }
+
+    .content h1 .header-anchor {
+        transform: translateY(0.75rem);
+    }
+
+    .content h2 .header-anchor {
+        transform: translateY(0.4rem);
+    }
+
+    .content h3 .header-anchor {
+        transform: translateY(0.20rem);
+    }
+
+    .content h4 .header-anchor {
+        transform: translateY(-0.1rem);
+    }
+
+    .content h5 .header-anchor {
+        transform: translateY(-0.25rem);
+    }
+
+}
+
+@screen lg {
+
+    .content .header-anchor {
+        @apply hidden;
+    }
+
+    .content .header-anchor:hover {
+        @apply no-underline;
+    }
+
+    .content h1:hover .header-anchor, .content h2:hover .header-anchor, .content h3:hover .header-anchor, .content h4:hover .header-anchor, .content h5:hover .header-anchor {
+        @apply block;
+    }
+
+}
+
+.content .subheadline {
+    @apply text-xl text-grey-dark leading-normal mb-4;
+}
+
+.content p {
+    @apply text-base text-grey-dark leading-normal mb-4;
+}
+
+.content a {
+    @apply text-pink no-underline;
+}
+
+@screen md {
+    .content .subheadline {
+        @apply text-2xl;
+    }
+
+    .content p {
+        @apply text-xl;
+    }
+
+    .content a:hover {
+        @apply text-pink-dark underline;
+    }
+}
+
+.content .icon.outbound {
+    @apply hidden;
+}
+
+.content ol, .content ul {
+    @apply pl-4 text-grey-dark text-base my-8;
+}
+
+.content li {
+    @apply mb-4 leading-normal;
+}
+
+@screen md {
+   .content ol, .content ul {
+        @apply text-xl;
+    }
+}
+
+.content :not(pre) > code {
+    @apply bg-grey-lightest p-1 text-pink text-base;
+}
+
+.content pre {
+    @apply bg-grey-lightest overflow-x-auto p-2 leading-normal my-8 ;
+}
+
+.content pre code {
+    @apply p-0 text-grey-darkest;
+}
+
+@screen md {
+    .content code {
+        @apply px-2;
+    }
+}
+
+
+.content table {
+    @apply my-8 overflow-x-auto;
+}
+
+.content thead {
+    @apply bg-grey-lighter;
+}
+
+.content th {
+    @apply text-left;
+}
+
+.content th, .content td {
+    @apply p-1;
+}
+
+.content tbody tr:nth-child(2n) {
+    @apply bg-grey-lightest;
+}
+
+@screen md {
+    .content table {
+        @apply w-full;
+    }
+
+    .content th, .content td {
+        @apply p-2;
+    }
+}
+
+.content .note p {
+    @apply text-white text-base mb-0;
+}

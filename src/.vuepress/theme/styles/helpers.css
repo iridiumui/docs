@@ -1,0 +1,19 @@
+@responsive {
+    .push-t {
+        top: 100%;
+    }
+    .push-r {
+        right: 100%;
+    }
+    .push-b {
+        bottom: 100%;
+    }
+    .push-l {
+        left: 100%;
+    }
+
+    .vertical-center {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
