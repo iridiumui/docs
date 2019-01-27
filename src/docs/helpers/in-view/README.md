@@ -8,7 +8,7 @@ The In View component uses the [Intersection Observer API](https://developer.moz
 
 | Name      | Description                                                                                                                           | Type            | Required | Default Value |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------|---------------|
-| element   | A selector for an element which viewport status will be checked. If this prop is not used the child element will be checked.         | String          | No       | 'top'         |
+| element   | A selector for an element which viewport status will be checked. If this prop is not used the child element will be checked.         | String          | No       | null         |
 | threshold | A number or an array of numbers that indicate how much of an element should be visible in the viewport before the status is updated. | Number or Array | No       | 0             |
 
 

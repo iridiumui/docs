@@ -25,6 +25,7 @@ The Click Outside component registers a click event listener on the document. It
 | Name         | Description                                                                                     | Data |
 |--------------|-------------------------------------------------------------------------------------------------|------|
 | clickoutside | When a user clicks on the page and it was not performed inside the element passed in as a slot  | None |
+| clickinside  | When a user clicks inside the element passed in as a slot                                       | None |
 
 ## Use cases
 #### Slide Out Navs
