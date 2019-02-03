@@ -95,11 +95,11 @@ module.exports = {
                     ]
                 },
                 {
-                    name: 'Components',
-                    slug: 'components',
+                    name: 'Core',
+                    slug: 'core',
                     links: [
-                        { name: 'Hamburger Nav', slug: 'hamburger-nav' },
                         { name: 'Modal', slug: 'modal' },
+                        { name: 'Toggle', slug: 'toggle' },
                     ]
                 },
                 {
