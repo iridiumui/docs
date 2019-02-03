@@ -10,6 +10,8 @@ The modal component supports [Portal Vue](https://github.com/LinusBorg/portal-vu
 
 When a modal is opened it will automatically disable scrolling on the `body` element. When it's closed again it will return it to its former state.
 
+The Modal component is built on top of the [Toggle](../toggle/) component.
+
 
 <CodeBlock>
 ```html
@@ -26,31 +28,25 @@ When a modal is opened it will automatically disable scrolling on the `body` ele
 
 ## Props
 
-| Name        | Description                                          | Type    | Required | Default Value |
-|-------------|------------------------------------------------------|---------|----------|---------------|
-| use-portal  | Whether to render the modal in a Portal.             | Boolean | No       | true          |
-| portal-name | The name of the portal in which to render the modal. | String  | No       | 'modal'       |
+| Name         | Description                                             | Type    | Required | Default Value |
+|--------------|---------------------------------------------------------|---------|----------|---------------|
+| use-portal   | Whether to render the modal in a Portal.                | Boolean | No       | true          |
+| portal-name  | The name of the portal in which to render the modal.    | String  | No       | 'modal'       |
+| open-default | A boolean representing whether it's open to begin with. | Boolean | No       | false         |
 
 ## Scoped Slots
 
 | Name    | Description                                          |
 |---------|------------------------------------------------------|
-| toggle  | The button that's responsible for opening the modal. |
+| button  | The button that's responsible for opening the modal. |
 | content | The modal itself.                                    |
 
-#### Data for the toggle slot
+#### Data for all scoped slots
 
 | Name      | Description                                      | Type     |
 |-----------|--------------------------------------------------|----------|
 | open      | A boolean representing whether the modal is open | Boolean  |
-| openModal | A method to open the modal.                      | Function |
-
-#### Data for the content slot
-
-| Name       | Description                                      | Type     |
-|------------|--------------------------------------------------|----------|
-| open       | A boolean representing whether the modal is open | Boolean  |
-| closeModal | A method to close the modal.                     | Function |
+| toggle    | A method to toggle the open state.               | Function |
 
 ## Use cases
 #### Newsletter Signup
