@@ -1,7 +1,7 @@
-# Hamburger Nav
-The Hamburger Nav component makes it possible to create an accesible hamburger menu. 
+# Toggle
+The Toggle component is a general purpose component for showing and hiding content.
 
-The Hamburger Nav component can take care of things like focus trapping. It can be combined with the [Breakpoint](../../helpers/breakpoint/) component to only show it on mobile devices. It can also be combined with other components such as the Click Outside to close the navigation on desktop. 
+The Toggle component can be used for things like building a hamburger navigation or showing a pop up. Some other components, such as the [Modal](../../core/modal/) component, is built on top of the toggle component.
 
 ## Props
 
@@ -14,9 +14,9 @@ The Hamburger Nav component can take care of things like focus trapping. It can 
 
 | Name    | Description                                                                                                                                                                       |
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Default | The content to be rendered. Can be used instead of the other scoped slots to get more control over the structure. Using this slot means that the it won't perform focus trapping. |
-| toggle  | The toggle to open the navigation.                                                                                                                                                |
-| content | The navigation itself.                                                                                                                                                            |
+| Default | The content to be rendered. Can be used instead of the other scoped slots to get more control over the structure.                                                                 |
+| button  | The button to open the navigation.                                                                                                                                                |
+| content | The content that is toggled.                                                                                                                                                            |
 
 <Note>
 <p>
@@ -32,11 +32,8 @@ The Hamburger Nav component can take care of things like focus trapping. It can 
 | toggle | A method to toggle the state of the navigation | Function |
 
 ## Use cases
-#### Hamburger Nav on mobile
-Many websites have different navigations for mobile and desktop. A common pattern is to use a hamburger nav on mobile devices where there is limited screen space. The [Breakpoint](../../helpers/breakpoint/) component can be used to achieve this.
-
-#### Hamburger Nav on all devices
-Some websites prefer to keep the experience consistent across all devices. In that case a hamburger nav can work for all screen sizes.
+#### Hamburger Nav
+A normal hamburger navigation can be created using the Toggle. The [Breakpoint](../../helpers/breakpoint/) component can be used to only make it visible on mobile.
 
 ## Examples
 
